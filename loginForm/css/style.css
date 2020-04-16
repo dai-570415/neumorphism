@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #EBECF0;
+}
+
+.header {
+    padding: 15px;
+}
+.header h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 10px rgb(151, 151, 151);
+}
+
+.main {
+    width: 50%;
+    margin: 50px auto;
+}
+.main h2 {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(141, 141, 141);
+    margin: 0 0 15px 0;
+}
+/* ログインフォーム */
+button,
+input {
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    border-radius: 320px;
+    padding: 15px;
+    background-color: #EBECF0;
+    text-shadow: 1px 1px 0 #FFF;
+}
+label {
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+}
+input {
+    box-shadow: 2px 2px 5px #BABECC inset, -5px -5px 10px #FFF inset;
+    width: 100%;
+    transition: .5s;
+}
+input:focus {
+    box-shadow: 1px 1px 2px #BABECC inset, -1px -1px 2px #FFF inset;
+}
+button {
+    color: rgb(179, 0, 0);
+    font-weight: bold;
+    box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+    transition: .5s;
+    cursor: pointer;
+    font-weight: 700;
+    width: 100%;
+}
+button:hover {
+    box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}
+button:active {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+/* ログインフォーム */
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 10px rgb(70, 70, 70);
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+@media screen and (max-width:960px) {
+
+}
+
+@media screen and (max-width:768px) {
+
+}
