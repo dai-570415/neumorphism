@@ -8,6 +8,9 @@
 body {
     background-color: #EBECF0;
 }
+body.body-dark {
+    background-color: #222222;
+}
 
 .main {
     width: 50%;
@@ -31,6 +34,16 @@ input {
     background-color: #EBECF0;
     text-shadow: 1px 1px 0 #FFF;
 }
+button.button-dark,
+input.input-dark {
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    border-radius: 320px;
+    padding: 15px;
+    background-color: #222222;
+    text-shadow: 1px 1px 0 rgb(61, 61, 61);
+}
 label {
     display: block;
     margin-bottom: 25px;
@@ -41,8 +54,21 @@ input {
     width: 100%;
     transition: .5s;
 }
+input.input-dark {
+    color: #FFF;
+    box-shadow: 2px 2px 5px rgb(24, 24, 24) inset, -5px -5px 10px rgb(29, 29, 29) inset;
+    width: 100%;
+    transition: .5s;
+}
 input:focus {
     box-shadow: 1px 1px 2px #BABECC inset, -1px -1px 2px #FFF inset;
+}
+input.input-dark:focus {
+    box-shadow: 1px 1px 2px rgb(15, 15, 15) inset, -1px -1px 2px rgb(5, 5, 5) inset;
+}
+input.input-dark::placeholder {
+    color: rgb(61, 61, 61);
+    text-shadow: none;
 }
 button {
     color: rgb(179, 0, 0);
@@ -53,11 +79,27 @@ button {
     font-weight: 700;
     width: 100%;
 }
+button.button-dark {
+    color: rgb(228, 228, 228);
+    font-weight: bold;
+    box-shadow: -5px -5px 20px rgb(43, 42, 42), 5px 5px 20px rgb(48, 48, 48);
+    transition: .5s;
+    cursor: pointer;
+    font-weight: 700;
+    width: 100%;
+}
 button:hover {
     box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
 }
+button.button-dark:hover {
+    box-shadow: -2px -2px 5px rgb(27, 27, 27), 2px 2px 5px rgb(17, 17, 17);
+}
 button:active {
     box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+button.button-dark:active {
+    background: rgb(26, 26, 26);
+    box-shadow: inset 1px 1px 2px rgb(26, 26, 26), inset -1px -1px 2px rgb(19, 19, 19);
 }
 /* ログインフォーム */
 
